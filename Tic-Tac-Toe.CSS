@@ -1,0 +1,158 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f9f4e6 0%, #f0e6d6 100%); /* بيج فاتح */
+    color: #000;
+  }
+  
+  [data-theme="dark"] {
+    background: linear-gradient(135deg, #162534 0%, #1c2833 100%); /* كحلي على أسود */
+    color: #eaeaea;
+    --primary-color: #6a82fb;
+    --secondary-color: #fc8f5c;
+  }
+  
+  [data-theme="light"] {
+    background: linear-gradient(135deg, #f9f4e6 0%, #f0e6d6 100%); /* بيج فاتح */
+    color: #000;
+    --primary-color: #ff6f61;
+    --secondary-color: #ffd700;
+  }
+  
+  /* الزر الخاص بتغيير الثيم */
+  .theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .instructions {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  /* تصميم منطقة اللعبة */
+  #game-area {
+    display: none;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+  }
+  
+  /* أزرار التحكم */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  
+ /* أنيميشن الفوز */
+.winner-animation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .winner-animation .star {
+    font-size: 48px;
+    color: var(--secondary-color);
+    animation: bounce 0.5s infinite alternate;
+    margin: 5px;
+  }
+  /* تصميم الأنيميشن عند خسارة اللاعب */
+.computer-lost-animation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .sad-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    animation: shake 0.5s ease-in-out infinite alternate;
+  }
+  
+
+  
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }

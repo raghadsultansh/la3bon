@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لعبة XO</title>
+  <link rel="stylesheet" href="Tic-Tac-Toe.CSS">
+</head>
+<body dir="rtl">
+  <div class="theme-toggle">
+    <label for="theme-switch">🌞/🌜</label>
+    <input type="checkbox" id="theme-switch" onchange="toggleTheme()">
+  </div>
+  <h1>لعبة XO</h1>
+  <div id="instructions" class="instructions">
+    <p>مرحبًا بك في لعبة XO!</p>
+    <p>الهدف من اللعبة هو تكوين ثلاثة رموز متتالية (أفقيًا، عموديًا، أو قطريًا).</p>
+    <div>
+      <label for="difficulty">اختر مستوى الصعوبة:</label>
+      <select id="difficulty">
+        <option value="easy">سهل</option>
+        <option value="medium">متوسط</option>
+        <option value="hard">صعب</option>
+      </select>
+    </div>
+    <button onclick="startGame()">ابدأ اللعبة</button>
+  </div>
+  <div id="game-area" style="display: none;">
+    <div id="board"></div>
+    <p id="status"></p>
+    <button onclick="resetGame()">إعادة اللعبة</button>
+  </div>
+  <div id="winner-animation" class="winner-animation" style="display: none;">
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <div class="star">⭐</div>
+    <p>مبروك! لقد فزت!</p>
+    <div id="computer-lost-animation" class="computer-lost-animation" style="display: none;">
+        <img src="sad-image.png" alt="حزين" class="sad-image">
+        <p>آسف، لقد خسرت! 😔</p>
+        <button onclick="resetGame()">إعادة اللعبة</button>
+      </div>
+      
+    <button onclick="resetGame()">إعادة اللعبة</button>
+  </div>
+  <script src="Tic-Tac-Toe.JS"></script>
+</body>
+</html>
+
