@@ -1,0 +1,110 @@
+.uno-game-main-div {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Common */
+  .uno-game-canv-default {
+    position: absolute;
+    display: block;
+  }
+  
+  /* View */
+  // Title
+  .uno-game-main-title {
+    left: 0;
+    right: 0;
+  
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: calc(16vh);
+  
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .uno-game-menu-title {
+    left: 0;
+    right: 0;
+  
+    font-family: 'Waiting for the Sunrise', cursive;
+    text-align: center;
+    font-size: calc(14vh);
+  
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  }
+  // Div
+  .uno-game-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  // Button
+  .uno-game-btn-div {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .uno-game-btn {
+    padding: 15px 32px;
+    margin: auto;
+  
+    background-color: Transparent;
+    border: none;
+    color: white;
+    cursor: pointer; /* Pointer/hand icon */
+    display: block; /* Make the buttons appear below each other */
+    font-size: calc(6vh);
+  }
+  .uno-game-btn:hover {
+    background-color: olive;
+  }
+  // Label
+  .uno-game-label {
+    padding: 15px 32px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: calc(6vh);
+  }
+  // Input
+  .uno-game-input {
+    padding: 15px 32px;
+    margin: auto;
+    display: block;
+    font-size: calc(6vh);
+  }
+  // UL
+  .uno-game-ul {
+    padding: 15px 32px;
+    margin: auto;
+    //display: block;
+    //font-size: calc(6vh);
+  }
+  .uno-game-li {
+    padding: 15px 32px;
+    margin: auto;
+    display: block;
+    font-size: calc(4vh);
+  }

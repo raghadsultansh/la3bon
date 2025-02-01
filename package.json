@@ -1,0 +1,44 @@
+{
+    "name": "uno-game",
+    "version": "1.0.0",
+    "description": "Uno game",
+    "private": true,
+    "scripts": {
+      "build": "webpack",
+      "start": "node ws_server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/newini/uno-game-js.git"
+    },
+    "keywords": [
+      "uno",
+      "game",
+      "js"
+    ],
+    "author": "Eunchong Kim",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/newini/uno-game-js/issues"
+    },
+    "homepage": "https://github.com/newini/uno-game-js#readme",
+    "devDependencies": {
+      "css-loader": "^6.0.0",
+      "mini-svg-data-uri": "^1.3.3",
+      "sass": "^1.35.2",
+      "sass-loader": "^12.1.0",
+      "style-loader": "^3.1.0",
+      "url-loader": "^4.1.1",
+      "webpack": "^5.45.1",
+      "webpack-cli": "^4.7.2"
+    },
+    "dependencies": {
+      "bufferutil": "^4.0.3",
+      "express": "^4.17.1",
+      "utf-8-validate": "^5.0.5",
+      "ws": "^8.0.0"
+    },
+    "engines": {
+      "node": "14.x"
+    }
+  }
