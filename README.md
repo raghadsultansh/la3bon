@@ -78,7 +78,7 @@ We plan to add more games in the future and enhance the overall experience by in
 <br>
 
 ## Resources
-* [satr cources](https://satr.codes/all-courses)
+* [satr courses](https://satr.codes/all-courses)
 * [JavaScript Game Programming Projects Tutorials](https://youtube.com/playlist?list=PLnKe36F30Y4bLhA-st9sC4ZthyV7nsL2Q&si=Ehk9SUPNKCNlEY5b) 
 <br>
 
