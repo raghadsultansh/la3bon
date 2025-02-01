@@ -1,7 +1,7 @@
 # La3bon
 
 * [Overview](https://github.com/raghadsultansh/la3bon?tab=readme-ov-file#overview)
-* [Setup](https://github.com/raghadsultansh/la3bon?tab=readme-ov-file#setup)
+* [Setup](https://github.com/raghadsultansh/la3bon?tab=readme-ov-file#setup-instructions)
 * [How it Works](https://github.com/raghadsultansh/la3bon?tab=readme-ov-file#how-it-works)
 * [Future Work](https://github.com/raghadsultansh/la3bon?tab=readme-ov-file#future-work)
 * [Resources](https://github.com/raghadsultansh/la3bon?tab=readme-ov-file#resources)
@@ -71,11 +71,6 @@ start index.html
 
 **3. API & Database Implementation**
    * RESTful API
-     - **GET /games** → Fetches the list of available games.
-     - **POST /signup** → Registers a new user.
-     - **POST /login** → Authenticates users using **JWT**.
-     - **GET /profile/:id** → Fetches user profile data.
-     - **POST /score** → Updates the leaderboard.
 <br>
 
 ## Future Work
