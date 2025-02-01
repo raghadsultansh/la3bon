@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "mongoose": "8.9.6",
+    "dotenv": "16.4.7",
+    "bcrypt": "5.1.1"
+  }
+}

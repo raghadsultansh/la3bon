@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <title>لعبون - La3bon Games</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/mainstyles.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <style>
+    .nav {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .search-input input {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+  <!-- Header Start -->
+  <header class="header-area header-sticky" dir="rtl">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="" />
+            </a>
+            <ul class="nav">
+              <li><a href="sign-up.html">التسجيل</a></li>
+              <li><a href="about us.html">من نحن</a></li>
+              <li><a href="games-list.html">الألعاب</a></li>
+              <li><a href="index.html" class="active">الرئيسية</a></li>
+              <li>
+                <a href="profile.html">الملف الشخصي
+                  <img src="assets/images/profile-header.jpg" alt="" /></a>
+              </li>
+            </ul>
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="ابحث هنا" id="searchText" name="searchKeyword" />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Area End -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main-profile ">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img src="assets/images/profile.jpg" alt="" style="border-radius: 23px;">
+                  </div>
+                  <div class="col-lg-4 align-self-center">
+                    <div class="main-info header-text">
+                      <h4 id="username">{{username}}</h4>
+                      <p>مرحبا بك في ملفك الشخصي! تحقق من إحصائياتك وأفضل ألعابك.</p>
+                      <div class="main-border-button">
+                        <a href="#">تاريخ العابك</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 align-self-center profile-info" dir="rtl">
+                    <h5>إحصائيات الألعاب</h5>
+                    <ul style="text-align: right;">
+                      <li><span>عدد الألعاب التي لعبت: </span> <span id="gamesLength"
+                          style="color: white;">{{gamesLength}}</span></li>
+                      <li><span>أفضل لعبة: </span> <span id="mostPlayed" style="color: white;">{{mostPlayed}}</span>
+                      </li>
+                      <li><span>آخر لعبة لعبتها: </span> <span id="lastGame" style="color: white;">{{lastGame}}</span>
+                      </li>
+                      <li><span>إجمالي النقاط المكتسبة: </span> <span id="pointsSum"
+                          style="color: white;">{{pointsSum}}</span></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+          <!-- ***** Gaming Library Start ***** -->
+          <div class="gaming-library profile-library">
+            <div class="col-lg-12" id="items">
+              <div class="heading-section">
+                <h4>سجل الألعاب</h4>
+              </div>
+
+              <!-- will be added automatically -->
+
+              <!-- ***** Gaming Library End ***** -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                © 2025.
+                صُنع بـ
+                <i class="fa fa-heart" style="color: red;"></i>
+                من قِبل
+                <a href="about us.html">فريق لَعْبون</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/tabs.js"></script>
+      <script src="assets/js/popup.js"></script>
+      <script src="assets/js/custom.js"></script>
+
+      <script src="assets/js/moment.min.js"></script>
+
+      <script>
+        function getMostPlayed(data) {
+          let games = {};
+          data.forEach(game => {
+            if (games[game.name]) {
+              games[game.name]++;
+            } else {
+              games[game.name] = 1;
+            }
+          });
+
+          let max = 0;
+
+          for (let game in games) {
+            if (games[game] > max) {
+              max = games[game];
+            }
+          }
+
+          for (let game in games) {
+            if (games[game] === max) {
+              return game;
+            }
+          }
+        }
+        function getPointsSum(data) {
+          let sum = 0;
+          data.forEach(game => {
+            sum += game.points;
+          });
+
+          return sum;
+        }
+        fetch("/api/user?token=" + escape(localStorage.getItem("token")), {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json"
+          }
+        }).then(d => d.json()).then(data => {
+          if (data.success && data.gamesData) {
+            console.log(data)
+            document.getElementById("username").innerHTML = `مرحبًا ${data.username}`;
+            document.getElementById("gamesLength").innerHTML = data.gamesData.length;
+            document.getElementById("mostPlayed").innerHTML = getMostPlayed(data.gamesData);
+            document.getElementById("lastGame").innerHTML = data.gamesData[data.gamesData.length - 1].name;
+            document.getElementById("pointsSum").innerHTML = getPointsSum(data.gamesData);
+
+            const gamesPlayed = [...new Set(data.gamesData.map(game => game.name))];
+            
+            const items = document.getElementById("items");
+            const gameLogos = {
+              "dino": "assets/images/CromeDino-logo.png",
+              "snake": "assets/images/snakegame-logo.png",
+              "floppybird": "assets/images/floppyBird-logo.png",
+              "tic-tac-toe": "assets/images/XO-logo.png",
+              "pacman": "assets/images/Pacman-logo.png",
+              "uno": "assets/images/UNO-logo.png"
+            }
+
+            function getLastPlayed(game) {
+              const lastPlayed = data.gamesData.filter(g => g.name === game).pop();
+              return lastPlayed.Date;
+            }
+
+            function getGamePoints(game) {
+              const gamePoints = data.gamesData.filter(g => g.name === game);
+              return getPointsSum(gamePoints);
+            }
+
+            function getGameHighestScore(game) {
+              const gamePoints = data.gamesData.filter(g => g.name === game);
+              let max = 0;
+              gamePoints.forEach(game => {
+                if (game.points > max) {
+                  max = game.points;
+                }
+              });
+
+              return max;
+            }
+
+            gamesPlayed.forEach(game => {
+              items.innerHTML += `
+              <div class="item">
+                <ul>
+                  <li><img src="${gameLogos[game]}" alt="" class="templatemo-item"></li>
+                  <li><h4>${game}</h4><span>تاريخ اللعب: ${moment(getLastPlayed(game)).format("DD/MM/YYYY HH:mm:ss A")}</span></li>
+                  <li><h4>النقاط المكتسبة</h4><span>${getGamePoints(game)} نقطة</span></li>
+                  <li><h4>أفضل نتيجة</h4><span>${getGameHighestScore(game)} نقطة</span></li>
+                </ul>
+              </div>
+          `
+            })
+          }
+        })
+      </script>
+
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <title>لعبون - La3bon Games</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/mainstyles.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+
+    <!-- Additional CSS Files -->
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      text-align: right;
+    }
+    .nav {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .search-input input {
+      text-align: right;
+    }
+    .main-banner .header-text {
+      text-align: right;
+    }
+    .heading-section h4,
+    .gaming-library .heading-section h4 {
+      text-align: right;
+    }
+    .item ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: right;
+    }
+    .item ul li {
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Start -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Search Start ***** -->
+            <!-- ***** Search End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li><a href="streams.html">البثوث</a></li>
+                <li><a href="details.html">التفاصيل</a></li>
+                <li><a href="browse.html">تصفح</a></li>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="profile.html">الملف الشخصي <img src="assets/images/profile-header.jpg" alt=""></a></li>
+            </ul>
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="ابحث هنا" id='searchText' name="searchKeyword" onkeypress="handle" />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+            <a class='menu-trigger'>
+              <span>القائمة</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Banner Start ***** -->
+          <div class="main-banner">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="header-text">
+                  <h6>انطلقوا إلى عالم لعبون المليء بالإثارة والتشويق، حيث تجدون مغامرات لا حدود لها في كل لعبة!</h6>
+                  <h4> العب مع <em>لعبون!</em></h4>
+                  <div class="main-button">
+                    <a href="browse.html">تصفح الآن</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Banner End ***** -->
+
+          <!-- ***** Most Popular Start ***** -->
+          <!-- <div class="most-popular">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>الأكثر شهرة</em> الآن</h4>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/popular-01.jpg" alt="">
+                      <h4>فورتنايت<br><span>رمل</span></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/popular-02.jpg" alt="">
+                      <h4>ببجي<br><span>باتل</span></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/popular-03.jpg" alt="">
+                      <h4>دوتا 2<br><span>ستيم-إكس</span></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="item">
+                      <img src="assets/images/popular-04.jpg" alt="">
+                      <h4>سي إس جو<br><span>أسطوري</span></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-download"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- ***** Most Popular End ***** -->
+
+          <!-- testing carousul here-->
+            <!-- ***** Featured Games Start ***** -->
+          
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="featured-games header-text">
+          <div class="heading-section">
+            <h4><em>Live</em> Streams</h4>
+          </div>
+          <div class="owl-features owl-carousel">
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/featured-01.jpg" alt="">
+                <div class="hover-effect">
+                  <h6>2.4K Streaming</h6>
+                </div>
+              </div>
+              <h4>CS-GO<br><span>249K Downloads</span></h4>
+              <ul>
+                <li><i class="fa fa-star"></i> 4.8</li>
+                <li><i class="fa fa-download"></i> 2.3M</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/featured-02.jpg" alt="">
+                <div class="hover-effect">
+                  <h6>2.4K Streaming</h6>
+                </div>
+              </div>
+              <h4>Gamezer<br><span>249K Downloads</span></h4>
+              <ul>
+                <li><i class="fa fa-star"></i> 4.8</li>
+                <li><i class="fa fa-download"></i> 2.3M</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/featured-03.jpg" alt="">
+                <div class="hover-effect">
+                  <h6>2.4K Streaming</h6>
+                </div>
+              </div>
+              <h4>Island Rusty<br><span>249K Downloads</span></h4>
+              <ul>
+                <li><i class="fa fa-star"></i> 4.8</li>
+                <li><i class="fa fa-download"></i> 2.3M</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/featured-01.jpg" alt="">
+                <div class="hover-effect">
+                  <h6>2.4K Streaming</h6>
+                </div>
+              </div>
+              <h4>CS-GO<br><span>249K Downloads</span></h4>
+              <ul>
+                <li><i class="fa fa-star"></i> 4.8</li>
+                <li><i class="fa fa-download"></i> 2.3M</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/featured-02.jpg" alt="">
+                <div class="hover-effect">
+                  <h6>2.4K Streaming</h6>
+                </div>
+              </div>
+              <h4>Gamezer<br><span>249K Downloads</span></h4>
+              <ul>
+                <li><i class="fa fa-star"></i> 4.8</li>
+                <li><i class="fa fa-download"></i> 2.3M</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="thumb">
+                <img src="assets/images/featured-03.jpg" alt="">
+                <div class="hover-effect">
+                  <h6>2.4K Streaming</h6>
+                </div>
+              </div>
+              <h4>Island Rusty<br><span>249K Downloads</span></h4>
+              <ul>
+                <li><i class="fa fa-star"></i> 4.8</li>
+                <li><i class="fa fa-download"></i> 2.3M</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+            <!-- ***** Gaming Library Start ***** -->
+          
+            <div class="col-lg-12">
+              <div class="gaming-library">
+              <div class="heading-section">
+                <h4><em>مكتبة ألعابك</em></h4>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>دوتا 2</h4><span>رمل</span></li>
+                  <li><h4>تاريخ الإضافة</h4><span>24/08/2036</span></li>
+                  <li><h4>عدد الساعات</h4><span>634 ساعة 22 دقيقة</span></li>
+                  <li><h4>الحالة</h4><span>تم التنزيل</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">تم التنزيل</a></div></li>
+                </ul>
+              </div>
+              <div class="item">
+                <ul>
+                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>فورتنايت</h4><span>رمل</span></li>
+                  <li><h4>تاريخ الإضافة</h4><span>22/06/2036</span></li>
+                  <li><h4>عدد الساعات</h4><span>740 ساعة 52 دقيقة</span></li>
+                  <li><h4>الحالة</h4><span>تم التنزيل</span></li>
+                  <li><div class="main-border-button"><a href="#">تنزيل</a></div></li>
+                </ul>
+              </div>
+              <div class="item last-item">
+                <ul>
+                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
+                  <li><h4>سي إس جو</h4><span>رمل</span></li>
+                  <li><h4>تاريخ الإضافة</h4><span>21/04/2036</span></li>
+                  <li><h4>عدد الساعات</h4><span>892 ساعة 14 دقيقة</span></li>
+                  <li><h4>الحالة</h4><span>تم التنزيل</span></li>
+                  <li><div class="main-border-button border-no-active"><a href="#">تم التنزيل</a></div></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="main-button">
+                <a href="profile.html">عرض مكتبتك</a>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Gaming Library End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>حقوق الطبع © 2036 <a href="#">شركة سايبورغ للألعاب</a>. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
