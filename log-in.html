@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>تسجيل الدخول - لعبون</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html, body {
+                font-family: "Cairo", sans-serif;
+                background-image: url(/assets/images/game-bg.png);
+                background-size: cover;
+                color: #fff;
+                min-height: 100vh;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            .login-container {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+            .login-box {
+                background: #222;
+                border-radius: 8px;
+                padding: 30px;
+                width: 100%;
+                max-width: 400px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                text-align: right;
+            }
+            .login-box h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            label {
+                display: inline-block;
+                margin-bottom: 6px;
+                color: #ccc;
+                font-size: 14px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px 15px;
+                margin-bottom: 15px;
+                border: none;
+                border-radius: 5px;
+                background: #333;
+                color: #fff;
+                font-size: 14px;
+            }
+            input:focus {
+                outline: 2px solid #FE14BB;
+            }
+            .main-button {
+                font-family: "Cairo", sans-serif;
+                display: inline-block;
+                background: #FE14BB;
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px 30px;
+                text-decoration: none;
+                font-size: 16px;
+                transition: 0.2s ease;
+                text-align: center;
+            }
+            .main-button:hover {
+                transform: scale(1.09);
+                background: #ffffff;
+                color: #FE14BB;
+            }
+            .center-btn {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .extra-links {
+                margin-top: 15px;
+                text-align: center;
+            }
+            .extra-links a {
+                color: #999;
+                text-decoration: none;
+                font-size: 13px;
+                margin: 0 5px;
+            }
+            .extra-links a:hover {
+                color: #FE14BB;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <div class="login-box">
+                <h2>تسجيل الدخول</h2>
+                <form action="login.php" method="POST">
+                    <label for="username">اسم المستخدم أو البريد الإلكتروني</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="اسم المستخدم أو البريد"
+                        required
+                    />
+                    <label for="password">كلمة المرور</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="********"
+                        required
+                    />
+                    <div class="center-btn">
+                        <button type="submit" class="main-button">
+                            دخول
+                        </button>
+                    </div>
+                </form>
+                <div class="extra-links">
+                    <a href="#" onclick="alert('إعادة تعيين كلمة المرور...')"
+                        >نسيت كلمة المرور؟</a
+                    >
+                    <span>|</span>
+                    <a href="sign-up.html">تسجيل جديد</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

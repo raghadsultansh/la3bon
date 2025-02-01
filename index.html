@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>لعبون - La3bon Games</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!-- IMPORTANT: This file has your talk-icon styling -->
+    <link rel="stylesheet" href="assets/css/mainstyles.css">
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Cairo", sans-serif;
+        text-align: right;
+      }
+      .nav {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .search-input input {
+        text-align: right;
+      }
+      .main-banner .header-text,
+       .heading-section h4,
+      .gaming-library .heading-section h4 {
+        text-align: right;
+      }
+      .item {
+        cursor: pointer;
+      }
+      .item ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: right;
+      }
+      .item ul li {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Start -->
+    <header class="header-area header-sticky" dir="rtl">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="" />
+              </a>
+              <ul class="nav">
+                <li><a href="sign-up.html">التسجيل</a></li>
+                <li><a href="about us.html">من نحن</a></li>
+                <li><a href="games-list.html">الألعاب</a></li>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li>
+                  <a href="profile.html"
+                    >الملف الشخصي
+                    <img src="assets/images/profile-header.jpg" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <div class="search-input">
+                <form id="search" action="#">
+                  <input
+                    type="text"
+                    placeholder="ابحث هنا"
+                    id="searchText"
+                    name="searchKeyword"
+                  />
+                  <i class="fa fa-search"></i>
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Area End -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-content">
+            <!-- Main banner with relative positioning so the .talk-icon can be placed absolutely -->
+            <div class="main-banner" style="margin-bottom: 10px; position: relative;" dir="rtl">
+
+              <!-- Talk Icon -->
+              <div class="talk-icon" onclick="playLa3boonSound()"></div>
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-text">
+                    <div class="button-wrapper">
+                      <a href="#featured-games">
+                        <img
+                          src="assets/images/button.png"
+                          alt="Play Now"
+                          class="play-now-button"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="ask-button" onclick="playAskSound()">اسألني</div>
+
+
+            <!-- ***** Featured Games Start ***** -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div id="featured-games" class="featured-games header-text">
+                  <div class="heading-section">
+                    <h4>! استكشف <em>العابنا</em></h4>
+                  </div>
+
+                  <div class="owl-features owl-carousel">
+                    <div
+                      class="item"
+                      onclick="window.location='/games/snake/index.html';"
+                    >
+                      <div class="thumb">
+                        <img src="assets/images/snakegame-logo.png" alt="" />
+                      </div>
+                      <h4>Snake Game<br /></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-heart"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="item"
+                      onclick="window.location='/games/XO/Tic-Tac-Toe.HTML';"
+                    >
+                      <div class="thumb">
+                        <img src="assets/images/XO-logo.png" alt="" />
+                      </div>
+                      <h4>XO<br /></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-heart"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="item"
+                      onclick="window.location='/games/floppyBird/index.html';"
+                    >
+                      <div class="thumb">
+                        <img src="assets/images/floppyBird-logo.png" alt="" />
+                        <div class="hover-effect"></div>
+                      </div>
+                      <h4>Floppy Bird<br /></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-heart"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="item"
+                      onclick="window.location='/games/La3bon-Pacman-game/pacman.html';"
+                    >
+                      <div class="thumb">
+                        <img src="assets/images/Pacman-logo.png" alt="" />
+                      </div>
+                      <h4>Pacman<br /></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-heart"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="item"
+                      onclick="window.location='/games/La3bon-uno-game/index.html';"
+                    >
+                      <div class="thumb">
+                        <img src="assets/images/UNO-logo.png" alt="" />
+                      </div>
+                      <h4>UNO<br /></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-heart"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                    <div
+                      class="item"
+                      onclick="window.location='/games/dino game/dino.html';"
+                    >
+                      <div class="thumb">
+                        <img src="assets/images/CromeDino-logo.png" alt="" />
+                      </div>
+                      <h4>Chrome Dino<br /></h4>
+                      <ul>
+                        <li><i class="fa fa-star"></i> 4.8</li>
+                        <li><i class="fa fa-heart"></i> 2.3M</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Featured Games End ***** -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              © 2025. صُنع بـ
+              <i class="fa fa-heart" style="color: red"></i>
+              من قِبل
+              <a href="about us.html">فريق لَعْبون</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<audio id="la3boonSound" src="assets/sounds/la3boon-sound.mp3"></audio>
+
+<script>
+  function playLa3boonSound() {
+    const audioElem = document.getElementById('la3boonSound');
+    audioElem.play();
+  }
+</script>
+
+<audio id="askSound" src="assets/sounds/ask-sound.mp3"></audio>
+
+<script>
+  function playAskSound() {
+    const askAudio = document.getElementById('askSound');
+    askAudio.play();
+  }
+</script>
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

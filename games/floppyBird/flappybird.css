@@ -1,0 +1,62 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: dimgray;
+  margin: 0;
+  padding: 0;
+  background: url(/assets/images/game-bg.png) no-repeat center center;
+  background-size: cover; 
+  font-family: "Cairo", sans-serif;
+}
+#board {
+    /* background-color: skyblue; */
+    background-image: url("images/flappybirdbg.png");
+}
+
+
+
+.game-frame {
+  margin: 50px auto;  
+  max-width: 600px;
+  width: 95%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 20px; 
+}
+
+
+#board {
+  display: block; 
+  margin: 0 auto; 
+  border: 2px solid #ccc;
+  border-radius: 8px;
+
+}
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: url(/assets/images/game-bg.png) no-repeat center center fixed;
+        background-size: cover; 
+        font-family: "Cairo", sans-serif;
+      }
+
+      .game-frame {
+        margin: 50px auto;  
+        max-width: 600px;
+        width: 95%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        padding: 20px; 
+      }
+
+    
+      #board {
+        display: block; 
+        margin: 0 auto; 
+        border: 2px solid #ccc;
+        border-radius: 8px;
+      
+      }
