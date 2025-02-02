@@ -43,17 +43,17 @@ cd la3bon
 <br>&nbsp;&nbsp;**2. Run Main File:**
 * **macOS:**
 ```
-open index.html
+open public/index.html
 ```
 
 * **Linux:**
 ```
-xdg-open index.html
+xdg-open public/index.html
 ```
 
 * **Windows:**
 ```
-start index.html
+start public/index.html
 ```
 <br>
 
