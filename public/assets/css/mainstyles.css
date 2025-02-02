@@ -782,7 +782,7 @@ Banner Style
   width: 380px;
   height: 400px;
 
-  background: url("/assets/images/la3boon-icon.png") no-repeat center/contain;
+  background: url(/public/assets/images/la3boon-icon.png) no-repeat center/contain;
   cursor: pointer;
   transition: transform 0.3s ease;
   z-index: 999;

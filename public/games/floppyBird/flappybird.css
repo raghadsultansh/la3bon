@@ -4,9 +4,10 @@ body {
     background-color: dimgray;
   margin: 0;
   padding: 0;
-  background: url(/assets/images/game-bg.png) no-repeat center center;
+   background: url(/public/assets/images/game-bg.png) no-repeat center center;
   background-size: cover; 
-  font-family: "Cairo", sans-serif;
+  font-family: "Cairo", sans-serif; 
+ 
 }
 #board {
     /* background-color: skyblue; */
@@ -37,7 +38,7 @@ body {
       body {
         margin: 0;
         padding: 0;
-        background: url(/assets/images/game-bg.png) no-repeat center center fixed;
+        background: url(/public/assets/images/game-bg.png) no-repeat center center fixed;
         background-size: cover; 
         font-family: "Cairo", sans-serif;
       }
